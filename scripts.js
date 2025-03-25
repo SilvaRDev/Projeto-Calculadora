@@ -9,8 +9,7 @@ document.addEventListener("keydown", function(event) { /* Verifica se as teclas 
   ];
 
   if (!teclasPermitidas.includes(event.code)) {
-      event.preventDefault();
-      console.log(`Tecla "${event.key}" bloqueada!`);
+    event.preventDefault();
   }
 });
 
