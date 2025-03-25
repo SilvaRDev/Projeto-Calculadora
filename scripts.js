@@ -20,10 +20,16 @@ function inverte() {
 }
 
 function aoClicarNoInput() {
-  const input = document.querySelector('.display')
-  input.style.border = "solid 1px white"
+  const valorInput = document.querySelector('.display').value
 
-  setTimeout(() => {
-    input.style.border = 'none'
-  }, "1000");
+  if (valorInput == '') {
+    const input = document.querySelector('.display')
+    input.style.border = "solid 1px white"
+
+    setTimeout(() => {
+      input.style.border = 'none'
+    }, "1000");
+  } else {
+    return false
+  }
 }
