@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-black: #17181A;
+  --color-black-button: #303136;
+  --color-blue-button: #005DB2;
+  --color-equal-button: #1991FF;
+  --color-gray-button: #616161;
+  --color-background: #DAF0FF;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+}
+
+div {
+  background: linear-gradient(191.34deg, var(--color-black) -4.95%, var(--color-black) 103.74%);
+  width: 375px;
+  height: 568px;
+  border-radius: 35px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+input {
+  font-size: 48px;
+  background-color: var(--color-black);
+  border: none;
+  outline: none;
+  text-align: right;
+  padding-top: 50px;
+  color: white;
+  grid-row: 1/3;
+  grid-column: 1/5;
+}
+
+button {
+  font-size: 24px;
+  border: none;
+  margin: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: opacity, .7s;
+}
+
+button:hover {
+  opacity: .7;
+  transition: opacity, .7s;
+}
+
+.black-button {
+  background-color: var(--color-black-button);
+}
+
+.blue-button {
+  background-color: var(--color-blue-button);
+}
+
+.equal {
+  background-color: var(--color-equal-button);
+  grid-row: 6/8;
+  grid-column: 4/5;
+}
+
+.gray-button {
+  background-color: var(--color-gray-button);
+}
+
+#zero {
+  grid-column: 1/3;
+}
